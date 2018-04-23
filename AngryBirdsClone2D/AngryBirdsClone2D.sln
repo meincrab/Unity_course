@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngryBirdsClone2D", "AngryBirdsClone2D.csproj", "{588DB97A-6B03-5DFE-9C93-6153B8132598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{588DB97A-6B03-5DFE-9C93-6153B8132598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588DB97A-6B03-5DFE-9C93-6153B8132598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588DB97A-6B03-5DFE-9C93-6153B8132598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588DB97A-6B03-5DFE-9C93-6153B8132598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
