@@ -108,7 +108,7 @@ public class boatMove : MonoBehaviour {
         }
 
     }
-
+    //Attempt to make submarine float for few second, before starting to drown... Didnt work out
     void gravityOnOff()
     {
         if (Input.anyKeyDown == false)

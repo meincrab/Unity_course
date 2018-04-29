@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class shooting : MonoBehaviour {
 
@@ -12,35 +13,30 @@ public class shooting : MonoBehaviour {
     public float destroyAfter;
     Vector3 velocity = new Vector3(0.0f, 1.0f, 0.0f);
     public Quaternion rotation = Quaternion.identity;
+    private int enemiesLeft;
+    public Text enemiesText;
+    public Text victory;
 
 
 
     // Use this for initialization
     void Start () {
-
-        
-
-
+        enemiesLeft = 4;
+        countEnemies();
+        victory.text = "";
     }
 	
 	// Update is called once per frame
 	void Update () {
-
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
-            nextFire = Time.time + fireLimiter;       
-            ShootTheTorpedo();          
+            nextFire = Time.time + fireLimiter;
+            ShootTheTorpedo();
+            countEnemies();
         }
-
-        
     }
 
-    void FixedUpdate()
-    {
-       
-    }
-
-    void ShootTheTorpedo()
+    public void ShootTheTorpedo()
     {
         //Torpedo should be shooted at the same direction as player movement
         //Meh... Didnt work out, just killed the time, lets try another variant.
@@ -51,14 +47,15 @@ public class shooting : MonoBehaviour {
 
 
         //Here we go , let's just try to get euler angles. 
-        
-
         GameObject torpedoCreated = Instantiate(torpedo, torpedoSpawn.position, torpedoSpawn.rotation);
-        //Divided by 2.75f to make torpedo initiate angle, match submarine nose angle.
-        torpedoCreated.GetComponent<Rigidbody2D>().velocity = new Vector2(torpedoSpeed, torpedoDirection/2.75f);
+        //Divided by 3.5f to make torpedo initiate angle, match submarine nose angle.
+        torpedoCreated.GetComponent<Rigidbody2D>().velocity = new Vector2(torpedoSpeed, torpedoDirection/3.5f);
         Destroy(torpedoCreated, destroyAfter);
 
 
+
+
+        
 
 
 
@@ -81,7 +78,21 @@ public class shooting : MonoBehaviour {
 
     }
 
-    
+   
+
+    void countEnemies()
+    {
+        enemiesText.text = "Enemies left " + enemiesLeft.ToString();
+    }
+    public void enemyKilled()
+    {
+        enemiesLeft -= 1;
+        enemiesText.text = "Enemies left " + enemiesLeft.ToString();
+        if (enemiesLeft == 0)
+        {
+            victory.text = "VICTORY!!!";
+        }
+    }
 
 
 }

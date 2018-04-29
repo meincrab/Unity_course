@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 35
+  controlID: 102
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 36
+  controlID: 103
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 37
+  controlID: 104
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,7 +184,7 @@ MonoBehaviour:
   - {fileID: 12}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -364,14 +364,14 @@ MonoBehaviour:
     width: 1309
     height: 651
   m_SceneLighting: 1
-  lastFramingTime: 6371.176782324008
+  lastFramingTime: 10711.523698819332
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.591605, y: 2.834947, z: 0}
+    m_Target: {x: 335.5, y: 39, z: 0}
     speed: 2
-    m_Value: {x: 6.591605, y: 2.834947, z: 0}
+    m_Value: {x: 335.5, y: 39, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -398,14 +398,14 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 28.57276
+    m_Target: 1343.0433
     speed: 2
-    m_Value: 28.57276
+    m_Value: 1343.0433
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.08717229, y: -0.89959055, z: 0.21045254, w: 0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -467,21 +467,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 588ae6fffa8ae6ff8a8ce6ff4494e6ffe494e6ff7496e6ff66c7e6fff2c7e6ff82c9e6ff964ceaff5ab7f7ff1afcffff000000006c260000a6260000
+    m_ExpandedIDs: e22bf2ff822cf2ff082ef2ff122ef2ffde54f2ff7c55f2ff0257f2ff0c57f2ff9a85f2ff3a86f2ffc087f2ffca87f2ff80ebf8fff2f6f8ffe89ff9ff9aaef9ffe4b5f9fff6bef9ffb012faff2c16faffc8dafaffd202fbffe802fbffec05fbffbc0ffbff3411fbffa415fbff9019fbff1afcffff0000000080260000f2d60000a4df0000d8e9000064ea000080a80200babf0200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: player
+      m_OriginalName: player
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 179858
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -528,19 +528,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/scripts
+    - Assets/prefabs
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/scripts
+  - Assets/prefabs
   m_LastFoldersGridSize: 53
   m_LastProjectPath: C:\Users\Meincrab\Desktop\Projects\Github\ttos0700-peliohjelmointi-unity3D-meincrab\GameProject
   m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c260000
-    m_LastClickedID: 9788
-    m_ExpandedIDs: 0000000018260000322600003c260000ffffff7f
+    m_SelectedIDs: 46260000
+    m_LastClickedID: 9798
+    m_ExpandedIDs: 000000001c2600004626000054260000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c857feff
     m_LastClickedID: -108600
-    m_ExpandedIDs: 0000000018260000322600003c260000
+    m_ExpandedIDs: 000000001c2600004626000054260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

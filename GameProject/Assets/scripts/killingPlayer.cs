@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class killingPlayer : MonoBehaviour {
 
@@ -35,6 +37,7 @@ public class killingPlayer : MonoBehaviour {
         if (detector.name == "player")
         {
             uboat = null;
+            
         }
     }
     //Destroing player on collision
@@ -43,6 +46,8 @@ public class killingPlayer : MonoBehaviour {
         if (collision.gameObject.name == "player")
         {
             Destroy(collision.gameObject);
+            //Pause before reloading a level
+            StartCoroutine(Delay());     
         }
     }
 
@@ -74,6 +79,14 @@ public class killingPlayer : MonoBehaviour {
         Destroy(newBomb, selfDestruction);
 
     }
-    
+
+    IEnumerator Delay()
+    {
+        print(Time.time);
+        yield return new WaitForSecondsRealtime(2);
+        Debug.Log("test");
+        print(Time.time);
+        SceneManager.LoadScene("mainScene");
+    }
 
 }

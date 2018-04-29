@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bombSplash : MonoBehaviour {
 
@@ -10,9 +11,12 @@ public class bombSplash : MonoBehaviour {
     {
         //Destroying player, destroying itself
         if (collision.gameObject.name == "player")
-        {
+        {  
             Destroy(collision.gameObject);
             Destroy(bombz.gameObject);
+            //For some reason, same piece of code like in the killingPlayer, doesn't work.
+            StartCoroutine(Delay());
+            SceneManager.LoadScene("mainScene");
         }
     }
     // Use this for initialization
@@ -25,6 +29,20 @@ public class bombSplash : MonoBehaviour {
         
     }
 
-    //Search for object in radius, destoroyes them.
-   
+    //Delay before restarting the level
+    IEnumerator Delay()
+    {
+        print(Time.time);
+        //This is called...
+        Debug.Log("hell world");
+        //Black Hole -____-
+        yield return new WaitForSecondsRealtime(2);
+        //this isn't
+        Debug.Log("test");
+        print(Time.time);
+        SceneManager.LoadScene("mainScene");
+
+
+    }
+
 }
